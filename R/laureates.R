@@ -87,10 +87,11 @@ laureates <- function(
     stringr::str_flatten(collapse = "&")
   # Call API
   api_url <- "http://api.nobelprize.org/2.1/laureates"
-  output <- readr::read_csv(
+  output <- suppressWarnings(readr::read_csv(
     glue::glue(
       "{api_url}?{query}"
-    )
-  )
+    ),
+    show_col_types = FALSE
+  ))
   return(output)
 }
