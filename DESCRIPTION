@@ -1,5 +1,5 @@
 Package: nobel
-Title: Access data from the Nobel Prize API via R.
+Title: Access data from the Nobel Prize API via R
 Version: 0.0.1
 Authors@R: c(
     person(given = "Nicola", family = "Rennie", role = c("aut", "cre", "cph"),
@@ -10,9 +10,9 @@ Depends:
 Imports:
     dplyr,
     glue,
+    readr,
     stringr,
-    tibble,
-    tidyr
+    tibble
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

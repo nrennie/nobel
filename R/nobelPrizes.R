@@ -26,8 +26,8 @@ nobelPrizes <- function(
   params_vals <- as.list(environment(NULL))
   query <- params_vals |>
     tibble::enframe() |>
-    dplyr::mutate(value = as.character(value)) |>
-    dplyr::filter(value != "NULL") |>
+    dplyr::mutate(value = as.character(.data$value)) |>
+    dplyr::filter(.data$value != "NULL") |>
     tibble::add_row(
       name = "format",
       value = "csv"
