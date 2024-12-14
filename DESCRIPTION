@@ -1,12 +1,19 @@
 Package: nobel
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Title: Access data from the Nobel Prize API via R.
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Nicola", family = "Rennie", role = c("aut", "cre", "cph"),
+    email = "nrennie35@gmail.com", comment = c(ORCID = "0000-0003-4797-557X")))
+Description: Since 1901, the Nobel Prizes have been awarded to those who, during the preceding year, have conferred the greatest benefit to humankind. The official API provides two end points relating to Nobel Prizes, and Nobel Laureates. This packages allows you to access that API via R and return the data directly as a data frame.
+Depends: 
+    R (>= 4.1)
+Imports:
+    dplyr,
+    glue,
+    stringr,
+    tibble,
+    tidyr
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
